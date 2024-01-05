@@ -1,0 +1,8 @@
+@if(auth()->user()->hasRole(['Admin']) || auth()->user()->can('list_{{modelNamePluralLowerCase}}'))
+            <li class="nav-item @if($last_uri=='{{modelNamePluralLowerCase}}') active  @endif">
+              <a href="{{route('{{modelNamePluralLowerCase}}.index')}}" class="nav-link">
+               
+                <div data-i18n="Calendar">Manage {{modelNamePluralUpperCase}}</div>
+              </a>
+            </li>
+     @endif

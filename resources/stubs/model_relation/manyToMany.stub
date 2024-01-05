@@ -1,0 +1,6 @@
+public function  {{many_to_many_name}}():BelongsToMany
+{
+    
+    return $this->belongsToMany({{related_model}}::class,'{{pivot_table}}', '{{lowercase_cur_model}}_id', '{{lowercase_related_model}}_id');
+    
+}

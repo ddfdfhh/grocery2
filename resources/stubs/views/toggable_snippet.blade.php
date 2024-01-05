@@ -1,0 +1,1 @@
+ <x-toggle_form :data="$inputs" column='1' />

@@ -1,0 +1,4 @@
+public function {{relationship_name}}():BelongsTo
+{
+  return $this->belongsTo({{relationship_model}}::class,'{{foreign_table_key}}','{{my_key}}')->withDefault()->withTrashed();
+} 

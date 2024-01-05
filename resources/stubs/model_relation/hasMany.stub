@@ -1,0 +1,5 @@
+public function {{relationship_name}}():HasMany
+{
+return $this->hasMany({{relationship_model}}::class,'{{foreign_table_key}}','{{my_key}}');
+}
+  

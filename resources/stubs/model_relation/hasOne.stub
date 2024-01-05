@@ -1,0 +1,4 @@
+public function {{relationship_name}}():HasOne
+{
+  return $this->hasOne({{relationship_model}}::class,'{{foreign_table_key}}','{{my_key}}')->withDefault()->withTrashed();;
+}
